@@ -125,19 +125,6 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/samsung/gta4l
 
-# Neutron Clang
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := neutron
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-neutron
-KERNEL_SUPPORTS_LLVM_TOOLS := true
-KERNEL_FULL_LLVM := true
-KERNEL_CC := CC=clang
-
-# Global LTO
-TARGET_GLOBAL_LTO := thin
-TARGET_GLOBAL_OPTIMIZATION := O3
-TARGET_GLOBAL_THINLTO := true
-
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
 
